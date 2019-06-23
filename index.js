@@ -1,6 +1,6 @@
 function findMatching (list, name) {
   return list.filter(function (driverName){
-    return driverName.toLowerCase() ===name.toLowerCase ()
+    return driverName.toLowerCase() ===name.toLowerCase ();
   });
 }
 
@@ -8,6 +8,6 @@ function findMatching (list, name) {
 function  myFuzzyMatch (list, partialName) {
   let lengthOfName =  partialName.length;
   return list.filter(function(driverName){
-    return driverName.slice(0, lengthOfName) === partialName
-  })
+    return driverName.slice(0, lengthOfName) === partialName;
+  });
 }
